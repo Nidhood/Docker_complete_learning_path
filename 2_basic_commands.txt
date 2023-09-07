@@ -1,5 +1,6 @@
 * "docker build ."  ->  Run all docker files 
                         inside the current directory.
+* "docker build [Dockerfile]" -> Contruct the specified created image.                        
 
 * "docker run [parameters] [their arguments] [image id]" 
                     ->  Run an specific docker image, 
@@ -7,7 +8,9 @@
                         and others.
     e.g. docker run -p 3000:3000 [image id] 
                     ->  Run the image using the opening 
-                        the port 3000 to comunicate.
+                        the local port 3000 where we want to access to
+                        comunicate whit internal expose port
+                        (indicate the port to be accesible).
 * "docker run -it [image id]" ->    Run the built image and keep it 
                                     on running iteratively 
                                     ( we can intercat with it).

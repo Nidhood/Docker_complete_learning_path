@@ -5,6 +5,18 @@
                                             outside of the container to 
                                             the inside of the container.
 "COPY . . " ->  Means to copy all content in the same Dockerfile rute,
-                to the internal file sistema ().
+                to the internal file sistema.
+
+"RUN [command]" ->  Execute any commands on top of the current image as a
+                    new layer and commit the results.
+                
+"WORKDIR [rute]" -> Inside the cointainer, change the current part to the
+                    route specified.
+
+"CMD [command]" ->  Execute any commands after the continer is succesfully 
+                    built.
+
+"EXPOSE [port]" ->  Define the network ports that this container will listen
+                    on at runtime.
 
 

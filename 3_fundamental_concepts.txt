@@ -7,6 +7,9 @@ What're containers?
 
 ->  Small packages application and the entire environment 
     are to running it (the running "unit of software").
+->  It`s important to understant that containers are insolated
+    of our machine, that means that our ports and OS functionality 
+    won`t be able to use if we doesn't specified.
 
 What's the relation between the images and the containers?
 
@@ -14,3 +17,5 @@ What's the relation between the images and the containers?
     instructions and code at once, but then we can use 
     this image to create multiples containers, where the
     application it's actually running. 
+
+

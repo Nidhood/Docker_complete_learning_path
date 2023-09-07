@@ -8,6 +8,8 @@ How we create an image?
 ->  e.g. "docker run node" : it will build a container based 
     on a node image, pre-built.
 
+-> Images are Read-only! any code change will be appear when the image is rebuilt.
+
 How we run a container?
 
 -> After build the image, we can run the container, to do that we use ""
