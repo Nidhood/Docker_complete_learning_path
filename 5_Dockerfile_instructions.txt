@@ -1,0 +1,10 @@
+"FROM [base image]" ->  Set the base image to use for any subsequent 
+                        instructions that follow. 
+
+"COPY [source file] [rute destination]" ->  Copy files or folders from
+                                            outside of the container to 
+                                            the inside of the container.
+"COPY . . " ->  Means to copy all content in the same Dockerfile rute,
+                to the internal file sistema ().
+
+

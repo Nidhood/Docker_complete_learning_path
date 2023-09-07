@@ -1,0 +1,13 @@
+How we create an image?
+
+->  In the first way, we can use an existing, 
+    prebuilt image ( docker hub:https://hub.docker.com ).
+
+->  In the second way, we can create our image.
+
+->  e.g. "docker run node" : it will build a container based 
+    on a node image, pre-built.
+
+How we run a container?
+
+-> After build the image, we can run the container, to do that we use ""

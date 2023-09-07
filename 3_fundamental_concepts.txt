@@ -1,0 +1,16 @@
+What're images?
+
+-> Images are the templates / Blueprints for the containers.
+-> Contains code + required tools / runtimes.
+
+What're containers?
+
+->  Small packages application and the entire environment 
+    are to running it (the running "unit of software").
+
+What's the relation between the images and the containers?
+
+->  With the images we specify step by step the setup 
+    instructions and code at once, but then we can use 
+    this image to create multiples containers, where the
+    application it's actually running. 

@@ -1,0 +1,39 @@
+What it's docker?
+
+->  Docker is a container technology, a tool for 
+    creating and managing containers.
+
+What it's container?
+
+->  Container is a standardized unit of software, 
+    a package of code and dependencies to run that code.
+
+->  Can be used in any machine, always where de docker is
+    installed.
+
+What it's the advantage of using docker?
+
+->  The same containers always yields the exact same 
+    application and execution behaviur! No matter where 
+    or by whom it might be executed.
+->  We ensure reliability & reproducible environments.
+
+Why would we want independent, standardized "application" and packages?
+
+->  Different Development & Production Environment.
+->  We want to build and test in exactly the same 
+    environment we later run our app in.
+->  Different Development Environment Within a Team 
+    / Company.
+->  Clashing Tools / Versions Between Different Projects.
+
+What is the difference between docker and virtual machines?
+
+->  Virtual machines creates inside your Operating System 
+    a Virtual OS, but having a lot of VM will implicate
+    wastes a lot of space on the hard drive and tends 
+    to be slow.
+
+->  Less waste of memory space on the hard drive, more 
+    flexible to be shared and more fastest to be 
+    configured and runned.

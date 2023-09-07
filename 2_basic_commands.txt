@@ -1,0 +1,18 @@
+* "docker build ."  ->  Run all docker files 
+                        inside the current directory.
+
+* "docker run [parameters] [their arguments] [image id]" 
+                    ->  Run an specific docker image, 
+                        selectin varibales like port 
+                        and others.
+    e.g. docker run -p 3000:3000 [image id] 
+                    ->  Run the image using the opening 
+                        the port 3000 to comunicate.
+* "docker run -it [image id]" ->    Run the built image and keep it 
+                                    on running iteratively 
+                                    ( we can intercat with it).
+
+* "docker ps" -> List all running docker containers.
+* "docker ps -a" -> List all docker created running and not running.
+
+* "docker stop [docker container name]" -> Stop the container.
