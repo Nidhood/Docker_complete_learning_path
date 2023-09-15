@@ -1,0 +1,22 @@
+* "[command]--help" -> See the description and options of the command.
+
+* "docker starts [container ID or container name]" -> Restart the stopped container (This doesn't block the commander terminal, but keeps running in the background).
+
+* "docker start -a [container ID or container name]" -> Restart the stopped container and attach it to the current terminal.
+
+¿What's a container attached mode a detached mode?
+
+-> Attached mode = The docker container run is attached to the current terminal (can't commit any commands and is the default), which also means we are listening to all inputs that get in the container.
+-> Detached mode = The docker container run is not attached to the current terminal (we can keep commit commands in the current terminal), we will not be able to see logs from the container.
+
+* "docker attach [container ID or container name]" -> Attach the container name of the specified container ID or name in the current terminal.
+
+* "docker logs [container ID or container name]" -> Print in the terminal the posted logs from the container specified name or ID.
+
+* "docker logs -f [container ID or container name]" -> Print the posted logs in the current terminal from the specified container and keep them attached to the terminal, listening for more logs.
+
+* "docker run -it [cointainer ID or container name]" -> Allow to wait for inputs.
+
+* "docker start -a -i [container ID or container name]" -> Restart the container and wait for inputs.
+
+* "docker rm [container ID or container name]" -> Remove the stopped container.
