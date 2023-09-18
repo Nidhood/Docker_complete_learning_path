@@ -7,7 +7,7 @@
 ¿What's a container attached mode a detached mode?
 
 -> Attached mode = The docker container run is attached to the current terminal (can't commit any commands and is the default), which also means we are listening to all inputs that get in the container.
--> Detached mode = The docker container run is not attached to the current terminal (we can keep commit commands in the current terminal), we will not be able to see logs from the container.
+-> Detached mode = The docker container run is not attached to the current terminal (we can keep committing commands in the current terminal), we will not be able to see logs from the container.
 
 * "docker attach [container ID or container name]" -> Attach the container name of the specified container ID or name in the current terminal.
 
@@ -17,6 +17,14 @@
 
 * "docker run -it [cointainer ID or container name]" -> Allow to wait for inputs.
 
+* "docker run -d [cointainer ID or container name]" -> Run the cointainer detached.
+
 * "docker start -a -i [container ID or container name]" -> Restart the container and wait for inputs.
 
 * "docker rm [container ID or container name]" -> Remove the stopped container.
+
+* "docker run --rm [container ID or container name]" -> Always after stopping the container it will be removed.
+
+* "docker image inspect [container ID or container name]" -> A JSON with more information about the image.
+
+* "docker image prune -a" -> Delete all images.

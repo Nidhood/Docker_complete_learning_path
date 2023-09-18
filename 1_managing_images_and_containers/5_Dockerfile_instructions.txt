@@ -4,16 +4,16 @@
 "COPY [source file] [rute destination]" ->  Copy files or folders from
                                             outside of the container to 
                                             the inside of the container.
-"COPY . . " ->  Means to copy all content in the same Dockerfile rute,
-                to the internal file sistema.
+"COPY . . " ->  Means to copy all content in the same Dockerfile route,
+                to the internal file system.
 
 "RUN [command]" ->  Execute any commands on top of the current image as a
                     new layer and commit the results.
                 
-"WORKDIR [rute]" -> Inside the cointainer, change the current part to the
+"WORKDIR [rute]" -> Inside the container, change the current part to the
                     route specified.
 
-"CMD [command]" ->  Execute any commands after the continer is succesfully 
+"CMD [command]" ->  Execute any commands after the container is successfully 
                     built.
 
 "EXPOSE [port]" ->  Define the network ports that this container will listen

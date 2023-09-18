@@ -1,0 +1,12 @@
+What category of data exists inside a container?
+
+    * Application (code + environment):     Is the data added to the image and container in the build phase, 
+                                            we're working with Read-only data, hence stored in images.
+
+    * Temporary App Data (e.g. entered user input):     Stored in memory for temporary files, dynamic changing, but cleared regularly. 
+                                                        This data is Read + write, temporary, hence stored in the container.
+
+    * Permanent App Data (e.g. user accounts):  Stored in files or a database, must not be lost if containers stop/restart. 
+                                                Read + write, permanent, stored with containers & volumes.   
+
+docker run -p 3000:80 -d --name feedback-app  --rm feedback-node                                                                                                                                                 

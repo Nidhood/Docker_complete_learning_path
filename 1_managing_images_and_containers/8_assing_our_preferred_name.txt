@@ -1,0 +1,2 @@
+* "docker run --name [container preferred name] [cointainer ID or container name]" -> Runs the container with the specified name.
+* "docker build -t [image name]:[tag of the image (version) ] [image name]" -> Build an image with our specified a preferred name and version (tag).

@@ -1,0 +1,14 @@
+What is a bind mount?
+
+->  This is similar to the volumes, but instead of leaving docker let's save the persistent 
+    data inside the volume where we don't know its location in our host's machine, the bind
+    mount specify the path or the file structure where this persistent data will be saved on 
+    our host machine.
+
+->  So the bind mount is great for persistent, editable (by us) data (e.g. source code).
+
+How can I search for my absolute path?
+
+-> macOS/Linux: -v $(pwd):/app
+
+-> Windows:     -v "%cd%":/app

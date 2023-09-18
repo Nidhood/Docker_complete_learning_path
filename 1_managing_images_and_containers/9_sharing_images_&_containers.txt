@@ -1,0 +1,9 @@
+* "docker tag [old image name]:[version (tag) ] [new image name]" -> Rename the name of an existing image (It is optional to define tangs or version).
+
+* "docker push nidhood/cockroach_db:tagname" -> Upload locally images (specified with the same name from the external repository).
+
+* "docker login" -> Set the docker hub account.
+
+* "docker pull [docker repository path]" -> E.g. (docker pull nidhood/cockroach_db)  It will pull the images from the docker hub repository.
+
+* "docker run [complete image name (repository) ] -> Runs the pull docker file repository (does not give us the latest version from the docker hub repository).

@@ -1,0 +1,5 @@
+* "docker cp [path outside of container] [container ID or container name]:/[path inside of container]" ->   Copy the specified data [folder/. => copy all inside, folder/file.txt => copy just the file.txt] from the outside the docker to the
+                                                                                                            inside de docker container (if the specified folder on the docker is not created, it will be created).
+
+* "docker cp [container ID or container name]:/[path inside of container] [path outside of container] " ->  Copy the specified data [folder/. => copy all inside, folder/file.txt => copy just the file.txt] from the inside of the docker file
+                                                                                                            to the outside (if the specified folder on the docker is not created, it will be created).                                                                                                            

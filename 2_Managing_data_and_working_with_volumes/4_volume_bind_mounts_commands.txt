@@ -1,0 +1,36 @@
+----------------------------------------- Volume flag runtime creation ----------------------------------------- 
+
+* "docker run -v [volume name]:[path inside the container]" -> Allows to us create a named volume, that admits persist the data modified inside the container (we don't want to edit it ).
+    
+    e.g. => docker run -p 3000:80 -d --name feedback-app  --rm -v feedback:/app/feedback feedback-node:volumes.
+
+    IMPORTANT = It is important to always manage volumes inside a container, and indicate in the run command that we are using that named volume.
+
+* "docker run -v  [volume name]:[path to the data inside the container to persist] -v [absulte path to the host location to save the persisted data]:[folder name inside our host machine]" -> Allows to us create a named volume and bind mount (which is the second volume).
+
+    e.g. => docker run -d --rm -p 3000:80 --name feedback-app -v feedback:/app/feedback -v "/home/nidhood/Desktop/Docker/Docker_complete_learning_path/2_Managing_data_and_working_with_volumes/resources:/app" feedback-node:volumes
+
+* "docker run -v  [volume name]:[path to the data inside the container to persist] -v [absulte path to the host location to save the persisted data]:[folder name inside our host machine] -v [path to the anonymous volume]" ->    Allows to us create a named volume, bind mount and anonymous volume (allows to us updating in real-time anything in the local machine and changing inside the container or the currently run application).
+
+    e.g. => docker run -d --rm -p 3000:80 --name feedback-app -v feedback:/app/feedback -v "/home/nidhood/Desktop/Docker/Docker_complete_learning_path/2_Managing_data_and_working_with_volumes/resources:/app" -v /app/node_modules feedback-node:volumes
+
+* "docker run -v [path to the data inside the container to persist]:ro" -> Create an anonymous volume that is read-only (awareness delicate data to be not editable also inside the container).
+
+* "docker run -v  [volume name]:[path to the data inside the container to persist]:ro" -> Create a named volume that is read-only (awareness delicate data to be not editable also inside the container).
+
+
+--------------------------------------------- Volume command creation --------------------------------------------- 
+
+* "docker inspect create [volume name]" -> See the configuration of an existent volume.
+
+
+------------------------------------------------ Volume information ------------------------------------------------ 
+
+* "docker volume create [volume name]" -> Create a named volume using the docker command.
+
+
+------------------------------------------------ Volume elimination ------------------------------------------------ 
+
+* "docker volume rm [volume name]" -> Allows us to delete the specified named volume that is created (it needs to not be in use), it is permanent.
+
+* "docker volume prune" -> Delete all saved volumes.

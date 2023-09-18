@@ -1,0 +1,21 @@
+What is a volume?
+
+-> Help us to persist data (even if the container is deleted and restarted).
+
+-> Volumes are folders on our host machine hard drive that are mounted ("made available", mapped) into containers. 
+
+-> Volumes peris if a container shuts down. If a container (re-)starts and mounts a volume any data inside of that volume is available in the container.
+
+-> A container can write data into a volume and read data from it.
+
+
+Where does docker save volumes?
+
+-> Docker sets up a folder/path on our host machine, exact location is unknown to you (=dev). Managed via docker volume commands.
+
+
+What types of volumes exist?
+
+-> Anonymous volumes: This type of volume exists only if the countainer is live, otherwise, it will deleted.
+
+-> Named volumes: This will permit the volume that the volume exists even if the container is shut down (data persistent, but we don't want to edit directly).
