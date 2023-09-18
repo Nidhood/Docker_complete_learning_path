@@ -1,0 +1,34 @@
+
+What are ARG (arguments) variables in the image construction?
+
+-> Available inside of Dockerfile, NOT accessible in CMD or any application code.
+
+-> Set on image build (docker build) via --build-arguments.
+
+
+What are ENV (environment) variables in the image construction?
+
+-> Available inside of Dockerfile & int application code.
+
+-> Set via ENV in Dockerfile or via --env on docker run.
+
+
+What is the difference between ENV and ARG?
+
+-> ENV values can be modified variables in the container running.
+
+-> ARG value can be modified variables in the image construction.
+
+
+----------------------------------------- environment flag runtime creation ----------------------------------------- 
+
+* "docker run --env [environment variable name]=[value]" -> Set the value from the docker file [replaces the default value].
+
+* "docker run -e [environment variable name]=[value]" -> Set the value from the docker file [replaces the default value].
+
+* "docker run --env-file ./[file name]" -> Set the value from the docker file (replaces the default value) using the configure file (set values to the ENV variables in the Dockerfile without defining all with -e or --env), in the current file path.
+
+
+----------------------------------------- arguments flag runtime creation ----------------------------------------- 
+
+* "docker build --build-arg [ARG name]=[ARG variable value]" -> Allow us to change values in the image declared with the ARG reserved word (applies only for the image variables).

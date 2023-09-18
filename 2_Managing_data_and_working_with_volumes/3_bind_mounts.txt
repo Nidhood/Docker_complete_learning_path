@@ -7,6 +7,7 @@ What is a bind mount?
 
 ->  So the bind mount is great for persistent, editable (by us) data (e.g. source code).
 
+
 How can I search for my absolute path?
 
 -> macOS/Linux: -v $(pwd):/app

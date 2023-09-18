@@ -1,0 +1,7 @@
+What is a container network?
+
+-> It is a concept that includes all containers in a space that they can connect, called a network.
+
+-> Within a Docker network, all containers can communicate with each other and IPs are automatically resolved.
+
+* "host.docker.internal" -> Docker replaces the value to the host machine IP.

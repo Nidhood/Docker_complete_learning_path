@@ -1,0 +1,3 @@
+* "docker network create [network name]" -> Create a space of communication for containers (network).
+
+* "docker network ls" -> List all networks created.
